@@ -1,4 +1,4 @@
-# riichi-pointer-trainer
+# riichi-wait-trainer
 
 ## Project setup
 ```
