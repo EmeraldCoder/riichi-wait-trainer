@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: riichi-wait-trainer-web
+  namespace: riichi-wait-trainer
+  labels:
+    app: riichi-wait-trainer-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: riichi-wait-trainer-web
+  template:
+    metadata:
+      labels:
+        app: riichi-wait-trainer-web
+    spec:
+      containers:
+      - name: riichi-wait-trainer-web
+        image: emeraldcoder/riichi-wait-trainer-web:${IMAGE_TAG}
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: riichi-wait-trainer-web
+  namespace: riichi-wait-trainer
+spec:
+  selector:
+    app: riichi-wait-trainer-web
+  ports:
+  - name: tcp
+    port: 80

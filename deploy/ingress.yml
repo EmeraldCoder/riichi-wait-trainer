@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: riichi-wait-trainer
+  namespace: riichi-wait-trainer
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/service-upstream: "true"
+spec:
+  rules:
+  - host: tools.phil.moe
+    http:
+      paths:
+      - path: /riichi/wait-trainer/?(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: riichi-wait-trainer-web
+            port:
+              number: 80
