@@ -1,6 +1,5 @@
 import groups from './hands.json'
 
-const groupsCopy = groups.slice()
 let randomGroupHands = null
 
 // export function getHandById (id) {
@@ -8,11 +7,9 @@ let randomGroupHands = null
 // }
 
 export function getRandomHandNotUsed () {
-  if (randomGroupHands == null || randomGroupHands.length === 0) {
-    const groupIndex = getRandomInt(groupsCopy.length)
-    randomGroupHands = groupsCopy[groupIndex].slice()
+  if (randomGroupHands == null) {
+    randomGroupHands = groups.slice()
     shuffleArray(randomGroupHands)
-    groupsCopy.splice(groupIndex, 1)
   }
 
   const hand = randomGroupHands.shift()
@@ -20,9 +17,9 @@ export function getRandomHandNotUsed () {
   return hand
 }
 
-function getRandomInt (max) {
-  return Math.floor(Math.random() * max)
-}
+// function getRandomInt (max) {
+//   return Math.floor(Math.random() * max)
+// }
 
 function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i--) {

@@ -4,7 +4,7 @@
       <span>Hand</span>
     </h2>
 
-    <hand-viewer :hand="winningHand"/>
+    <hand-viewer :hand="question"/>
 
     <h2 class="m-t-2">
       <span>What is the wait?</span>
@@ -12,7 +12,6 @@
 
     <form
       v-show="status === 'user'"
-      autocomplete="false"
       @submit="submitAnswer"
     >
       <answer-input v-model="userAnswer"/>
@@ -31,13 +30,9 @@
         class="m-t-2"
       >
         <font-awesome-icon
-          :icon="validAnswerIcon"
+          :icon="faCheckCircle"
           style="font-size: 50px; color: var(--dark-green);"
         />
-
-        <div class="m-t bold">
-          The hand wait is {{ JSON.stringify(handInfo.ukeire) }}
-        </div>
       </div>
 
       <div
@@ -45,13 +40,21 @@
         class="m-t-2"
       >
         <font-awesome-icon
-          :icon="invalidAnswerIcon"
+          :icon="faTimesCircle"
           style="font-size: 50px; color: #B33A3A;"
         />
+      </div>
 
-        <div class="m-t bold">
-          The hand wait is {{ JSON.stringify(handInfo.ukeire) }} not {{ userAnswer }}
+      <div class="m-t">
+        <div class="row">
+          <tile-group>
+            <tile v-for="tile in answer" :key="tile" :tile="tile"/>
+          </tile-group>
         </div>
+      </div>
+
+      <div class="m-t-2 bold">
+        {{ question.explanation }}
       </div>
 
       <div class="bottom-buttons">
@@ -64,103 +67,61 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { getUkeire, compareTiles } from '@/riichi-fn'
+import { Tile, TileGroup } from '@emeraldcoder/riichi-ui-vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTimesCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import { ref, computed } from 'vue'
 import { getRandomHandNotUsed } from './../hands-repository'
 import AnswerInput from './AnswerInput.vue'
 import HandViewer from './HandViewer.vue'
-import { getUkeire } from '@emeraldcoder/riichi-fn/src/getUkeire'
-import { compareTiles } from '@emeraldcoder/riichi-fn/src/compareTiles'
 
-export default {
-  components: {
-    FontAwesomeIcon,
-    HandViewer,
-    AnswerInput
-  },
+const status = ref('user') // can be user (user need to enter a value), good (user gave the right answer) or bad (user gave the wrong answer)
 
-  setup () {
-    // Question
+const question = ref(getRandomHandNotUsed())
 
-    const winningHand = ref(getRandomHandNotUsed())
+const answer = computed(() => {
+  if (question == null) return null
+  return getUkeire({
+    hand: question.value.hand,
+    calls: question.value.calls.map(x => ({ tiles: x.tiles }))
+  })
+})
 
-    const handInfo = computed(() => {
-      if (winningHand.value == null) return null
+const userAnswer = ref([])
 
-      try {
-        const hand = {
-          hand: winningHand.value.hand,
-          calls: winningHand.value.calls.map(x => ({ tiles: x.tiles }))
-        }
+function submitAnswer (e) {
+  e.preventDefault()
+  status.value = ukeireAreIdentical(userAnswer.value, answer.value) ? 'good' : 'bad'
+}
 
-        return {
-          ukeire: getUkeire(hand).sort(compareTiles)
-        }
-      } catch (e) {
-        console.error('error analysis hand:', winningHand.value.id)
-        console.error(e)
-      }
+function nextQuestion () {
+  window.scrollTo(0, 0)
 
-      return undefined
-    })
+  const nextQuestion = getRandomHandNotUsed()
 
-    // Answer
-
-    const userAnswer = ref([])
-    const status = ref('user') // can be user (user need to enter a value), good (user gave the right answer) or bad (user gave the wrong answer)
-
-    const submitAnswer = (e) => {
-      e.preventDefault()
-
-      if (ukeireAreIdentical(handInfo.value.ukeire, userAnswer.value)) {
-        status.value = 'good'
-      } else {
-        status.value = 'bad'
-      }
-    }
-
-    function ukeireAreIdentical (a, b) {
-      if (a.length !== b.length) return false
-
-      const sortedA = a.slice().sort(compareTiles)
-      const sortedB = b.slice().sort(compareTiles)
-
-      for (let i = 0; i < sortedA.length; i++) {
-        if (compareTiles(sortedA[i], sortedB[i]) !== 0) return false
-      }
-
-      return true
-    }
-
-    const nextQuestion = () => {
-      const nextWinningHand = getRandomHandNotUsed()
-
-      if (nextWinningHand == null) {
-        // #TODO: Should not happen when we'll implement the random questions
-        alert('No more questions')
-      } else {
-        winningHand.value = nextWinningHand
-      }
-
-      userAnswer.value = []
-      status.value = 'user'
-
-      window.scrollTo(0, 0)
-    }
-
-    return {
-      handInfo,
-      submitAnswer,
-      userAnswer,
-      status,
-      validAnswerIcon: faCheckCircle,
-      invalidAnswerIcon: faTimesCircle,
-      nextQuestion,
-      winningHand
-    }
+  if (nextQuestion == null) {
+    // #TODO: Should not happen when we'll implement the random questions
+    alert('No more questions')
+  } else {
+    question.value = nextQuestion
+    userAnswer.value = []
+    status.value = 'user'
   }
+}
+
+function ukeireAreIdentical (a, b) {
+  if (a.length !== b.length) return false
+
+  const sortedA = a.slice().sort(compareTiles)
+  const sortedB = b.slice().sort(compareTiles)
+
+  for (let i = 0; i < sortedA.length; i++) {
+    if (compareTiles(sortedA[i], sortedB[i]) !== 0) return false
+  }
+
+  return true
 }
 </script>
 
