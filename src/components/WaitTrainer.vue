@@ -82,7 +82,7 @@ const status = ref('user') // can be user (user need to enter a value), good (us
 const question = ref(getRandomHandNotUsed())
 
 const answer = computed(() => {
-  if (question == null) return null
+  if (question.value == null) return null
   return getUkeire({
     hand: question.value.hand,
     calls: question.value.calls.map(x => ({ tiles: x.tiles }))

@@ -7,5 +7,5 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'standard'
   ],
-  ignorePatterns: ['tests/*']
+  ignorePatterns: ['tests/*', 'src/riichi-fn.js']
 }
