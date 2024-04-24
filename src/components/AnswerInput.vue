@@ -21,7 +21,7 @@ function toggleTileSelection (tile) {
 <template>
   <div class="stack gap-txt">
     <div class="stack gap-0">
-      <div v-for="suit in ['m', 'p', 's', 'z']" :key="suit">
+      <div v-for="suit in ['m', 'z']" :key="suit">
         <tile
           v-for="value in (suit === 'z' ? 7 : 9)"
           :key="`${value}${suit}`"
