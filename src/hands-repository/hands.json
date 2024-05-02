@@ -399,5 +399,185 @@
     ],
     "calls": [],
     "explanation": "Tatsumaki (two ankou two away from each other [ex.: 4 6] connected by a tile in between)"
+  },
+  {
+    "id": "41aee9d8-c399-40bb-8b8c-2f777f4c7213",
+    "hand": [
+      "3m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "8m",
+      "8m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Kanchan with tanki"
+  },
+  {
+    "id": "743b8801-8124-449b-aafc-adbf3fbf913f",
+    "hand": [
+      "1m",
+      "1m",
+      "1m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Kanchan with nobetan"
+  },
+  {
+    "id": "0ebb86f2-6cdc-4524-b690-8264604c3a3c",
+    "hand": [
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Shanpon with tanki"
+  },
+  {
+    "id": "3f3a9ed9-5f8f-49f4-913e-6edc0248c596",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "1z",
+      "1z",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Nested shanpon"
+  },
+  {
+    "id": "d17cef76-e92b-4b18-8d0f-d688e310f165",
+    "hand": [
+      "1m",
+      "1m",
+      "2m",
+      "2m",
+      "2m",
+      "2m",
+      "3m",
+      "1z",
+      "1z",
+      "1z",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with penchan"
+  },
+  {
+    "id": "613d150a-1d17-4d81-83cc-f6fbe06d7bc2",
+    "hand": [
+      "5m",
+      "5m",
+      "6m",
+      "7m",
+      "7m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Aryanmen with kanchan"
+  },
+  {
+    "id": "1420050c-8f5d-46e6-a028-71c87677dfa6",
+    "hand": [
+      "3m",
+      "4m",
+      "5m",
+      "5m",
+      "7m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Aryanmen with kanchan"
+  },
+  {
+    "id": "e6d04553-6ccf-4ab6-9f8a-9f9b5b291ed6",
+    "hand": [
+      "4m",
+      "5m",
+      "5m",
+      "6m",
+      "7m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with nakabukure"
+  },
+  {
+    "id": "02def465-1010-49b2-9cdc-96978bef356d",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "5z",
+      "5z",
+      "5z"
+    ],
+    "calls": [],
+    "explanation": "Quadruple shanpon"
   }
 ]
