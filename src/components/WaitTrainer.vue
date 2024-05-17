@@ -48,7 +48,7 @@
       <div class="m-t">
         <div class="row">
           <tile-group>
-            <tile v-for="tile in answer" :key="tile" :tile="tile"/>
+            <tile v-for="tile in answer" :key="tile" :tile="tile" :small="isMobile || isMedium"/>
           </tile-group>
         </div>
       </div>
@@ -73,9 +73,12 @@ import { Tile, TileGroup } from '@emeraldcoder/riichi-ui-vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTimesCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import { ref, computed } from 'vue'
-import { getRandomHandNotUsed } from './../hands-repository'
+import useWidthTreshold from '../composables/useWidthThreshold'
+import { getRandomHandNotUsed } from '../hands-repository'
 import AnswerInput from './AnswerInput.vue'
 import HandViewer from './HandViewer.vue'
+
+const { isMobile, isMedium } = useWidthTreshold()
 
 const status = ref('user') // can be user (user need to enter a value), good (user gave the right answer) or bad (user gave the wrong answer)
 
