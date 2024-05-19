@@ -5,6 +5,9 @@ import useWidthTreshold from '../composables/useWidthThreshold'
 const props = defineProps({
   modelValue: {
     required: true
+  },
+  suits: {
+    required: true
   }
 })
 
@@ -24,7 +27,7 @@ function toggleTileSelection (tile) {
 <template>
   <div class="stack gap-txt">
     <div class="stack gap-0">
-      <div v-for="suit in ['m', 'z']" :key="suit">
+      <div v-for="suit in suits" :key="suit">
         <tile
           v-for="value in (suit === 'z' ? 7 : 9)"
           :key="`${value}${suit}`"

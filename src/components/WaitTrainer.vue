@@ -14,7 +14,7 @@
       v-show="status === 'user'"
       @submit="submitAnswer"
     >
-      <answer-input v-model="userAnswer"/>
+      <answer-input v-model="userAnswer" :suits="question.hand.reduce((agg, x) => { const suit = x[1]; if (!agg.includes(suit)) { agg.push(suit); } return agg }, []).sort()"/>
 
       <div class="bottom-buttons">
         <button class="large">Submit</button>
