@@ -579,5 +579,185 @@
     ],
     "calls": [],
     "explanation": "Quadruple shanpon"
+  },
+  {
+    "id": "d9c4ffcc-8f62-47a6-840f-fccf19ee45f7",
+    "hand": [
+      "3m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6p",
+      "7p",
+      "8p",
+      "8p",
+      "8p",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": [],
+    "explanation": "Double entotsu"
+  },
+  {
+    "id": "392bb11e-1655-43e8-8162-b0ee9882d710",
+    "hand": [
+      "2m",
+      "2m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with shanpon"
+  },
+  {
+    "id": "d03b5b7e-36ab-45c4-9aae-4dd1ac3993ac",
+    "hand": [
+      "3m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "2s",
+      "2s",
+      "3s",
+      "3s",
+      "4s",
+      "4s",
+      "5s",
+      "5s"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with nested shanpon"
+  },
+  {
+    "id": "77163402-1253-46c9-969b-fe4c92755a95",
+    "hand": [
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with tanki and shanpon (1)"
+  },
+  {
+    "id": "02405e7a-760b-4cfa-a514-197e3be5c9c0",
+    "hand": [
+      "2m",
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Ryanmen with tanki and shanpon (2)"
+  },
+  {
+    "id": "e82d390b-c88f-451d-a5c9-87c91a463837",
+    "hand": [
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Sanmenchan with shanpon"
+  },
+  {
+    "id": "a4030888-f11e-43b5-a8f1-9db9ad7796ba",
+    "hand": [
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Sanmenchan with tanki"
+  },
+  {
+    "id": "46e2312a-6623-45b9-967a-12cf5595017f",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Double ryanmen (1)"
+  },
+  {
+    "id": "a73b2b3d-92b8-43fe-b15e-a6bab1c214cf",
+    "hand": [
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "7m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": [],
+    "explanation": "Double ryanmen (2)"
   }
 ]
