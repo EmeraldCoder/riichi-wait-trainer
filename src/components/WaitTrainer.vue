@@ -53,10 +53,6 @@
         </div>
       </div>
 
-      <div class="m-t-2 bold">
-        {{ question.explanation }}
-      </div>
-
       <div class="bottom-buttons">
         <button class="large" @click="nextQuestion">
           <span class="long-desc">Next Question</span>

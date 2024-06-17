@@ -1,0 +1,272 @@
+[
+  {
+      "hand": "1123479m111666z",
+      "wait": "8m",
+      "description": "Kanchan"
+  },
+  {
+      "hand": "1123489m111666z",
+      "wait": "7m",
+      "description": "Penchan"
+  },
+  {
+      "hand": "123456789m1666z",
+      "wait": "1z",
+      "description": "Tanki"
+  },
+  {
+      "hand": "3445789m111666z",
+      "wait": "4m",
+      "description": "Nakabukure"
+  },
+  {
+      "hand": "4m",
+      "calls": [
+          { "type": "pon", "tiles": "111m" },
+          { "type": "pon", "tiles": "888m" },
+          { "type": "pon", "tiles": "111z" },
+          { "type": "pon", "tiles": "666z" }
+      ],
+      "wait": "4m",
+      "description": "Hadaka tanki"
+  },
+  {
+      "hand": "1235567m111666z",
+      "wait": "58m",
+      "description": "Aryanmen"
+  },
+  {
+      "hand": "1113789m111666z",
+      "wait": "23m",
+      "description": "Kantan"
+  },
+  {
+      "hand": "4567m123p111666z",
+      "wait": "47m",
+      "description": "Nobetan"
+  },
+  {
+      "hand": "123456789m4445p",
+      "wait": "356p",
+      "description": "Ryantan"
+  },
+  {
+      "hand": "123456789m1112s",
+      "wait": "23s",
+      "description": "Pentan"
+  },
+  {
+      "hand": "4445666m111666z",
+      "wait": "34567m",
+      "description": "Tatsumaki"
+  },
+  {
+      "hand": "11223367m11666z",
+      "wait": "58m",
+      "description": "Ryanmen"
+  },
+  {
+      "hand": "11223355789m11z",
+      "wait": "5m1z",
+      "description": "Shanpon"
+  },
+  {
+      "hand": "12345678m11666z",
+      "wait": "369m",
+      "description": "Sanmenchan"
+  },
+  {
+      "hand": "11m45666p111666z",
+      "wait": "1m36p",
+      "description": "Entotsu"
+  },
+  {
+      "hand": "4555m123p111666z",
+      "wait": "346m",
+      "description": "Ryantan"
+  },
+  {
+      "hand": "2345678m111666z",
+      "wait": "258m",
+      "description": "Sanmentan"
+  },
+  {
+      "hand": "3334567888m111z",
+      "wait": "23456789m",
+      "description": "Happoubijin"
+  },
+  {
+      "hand": "1112345578999m",
+      "wait": "569m",
+      "description": "Chuuren Poutou (6m takame, 59m yasume)"
+  },
+  {
+      "hand": "1112345678999m",
+      "wait": "123456789m",
+      "description": "Junsei Chuuren Poutou"
+  },
+  {
+      "hand": "1m19p19s12345667z",
+      "wait": "9m",
+      "description": "Kokushi musou single wait"
+  },
+  {
+      "hand": "19m19p19s1234567z",
+      "wait": "19m19p19s1234567z",
+      "description": "Kokushi musou juusan menmachi"
+  },
+  {
+      "hand": "3567888m111666z",
+      "wait": "34m",
+      "description": "Kanchan with tanki"
+  },
+  {
+      "hand": "1113456m111666z",
+      "wait": "236m",
+      "description": "Kanchan with nobetan"
+  },
+  {
+      "hand": "4455566m111666z",
+      "wait": "456m",
+      "description": "Shanpon with tanki"
+  },
+  {
+      "hand": "22334455m11666z",
+      "wait": "25m1z",
+      "description": "Nested shanpon"
+  },
+  {
+      "hand": "1122223m111666z",
+      "wait": "134m",
+      "description": "Ryanmen with penchan"
+  },
+  {
+      "hand": "5567777m111666z",
+      "wait": "568m",
+      "description": "Aryanmen with kanchan"
+  },
+  {
+      "hand": "3455777m111666z",
+      "wait": "256m",
+      "description": "Aryanmen with kanchan"
+  },
+  {
+      "hand": "4556777m111666z",
+      "wait": "356m",
+      "description": "Ryanmen with nakabukure"
+  },
+  {
+      "hand": "2233445566m111z",
+      "wait": "2356m",
+      "description": "Quadruple shanpon"
+  },
+  {
+      "hand": "34555m67888p111z",
+      "wait": "25m58p",
+      "description": "Double entotsu"
+  },
+  {
+      "hand": "2223456677m111z",
+      "wait": "5678m",
+      "description": "Ryanmen with shanpon"
+  },
+  {
+      "hand": "22334455m34555s",
+      "wait": "25m25s",
+      "description": "Ryanmen with nested shanpon"
+  },
+  {
+      "hand": "4445566m111666z",
+      "wait": "4567m",
+      "description": "Ryanmen with tanki and shanpon"
+  },
+  {
+      "hand": "2223334m111666z",
+      "wait": "2345m",
+      "description": "Ryanmen with tanki and shanpon"
+  },
+  {
+      "hand": "33345678m11666z",
+      "wait": "369m1z",
+      "description": "Sanmenchan with shanpon"
+  },
+  {
+      "hand": "4555678m111666z",
+      "wait": "3469m",
+      "description": "Sanmenchan with tanki"
+  },
+  {
+      "hand": "2233334m111666z",
+      "wait": "1245m",
+      "description": "Double ryanmen"
+  },
+  {
+      "hand": "4566777m111666z",
+      "wait": "3568m",
+      "description": "Double ryanmen"
+  },
+  {
+      "hand": "2345556677m111z",
+      "wait": "25678m",
+      "description": "Ryanmen with shanpon and nobetan"
+  },
+  {
+      "hand": "3334567m111666z",
+      "wait": "24578m",
+      "description": "Ryanmenten with nobetan"
+  },
+  {
+      "hand": "4445667888m111z",
+      "wait": "45678m",
+      "description": "Ryanmen with shanpon and kanchan"
+  },
+  {
+      "hand": "1112345678m111z",
+      "wait": "235689m",
+      "description": "Ryanmenten + Sanmentan"
+  },
+  {
+      "hand": "2233444555666m",
+      "wait": "123456m"
+  },
+  {
+      "hand": "2344567888m111z",
+      "wait": "134679m"
+  },
+  {
+      "hand": "2344445678m111z",
+      "wait": "235689m"
+  },
+  {
+      "hand": "2233445556667m",
+      "wait": "235678m"
+  },
+  {
+      "hand": "4445666678m111z",
+      "wait": "345789m"
+  },
+  {
+      "hand": "2333345677778m",
+      "wait": "1245689m"
+  },
+  {
+      "hand": "2344445666678m",
+      "wait": "1235789m"
+  },
+  {
+      "hand": "2233445566777m",
+      "wait": "1234567m"
+  },
+  {
+      "hand": "2344455566678m",
+      "wait": "1245689m"
+  },
+  {
+      "hand": "2333344567888m",
+      "wait": "12456789m"
+  },
+  {
+      "hand": "2344445678999m",
+      "wait": "12356789m"
+  }
+]

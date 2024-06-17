@@ -1,407 +1,445 @@
 [
   {
-    "id": "079dd761-3392-433d-9476-903508349b01",
+    "id": "015b687b-28a9-4c35-a6f0-dfea815d719b",
+    "hand": [
+      "1m",
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "7m",
+      "9m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "fa69ba7e-d67b-4854-a49b-9c1d5461c107",
+    "hand": [
+      "1m",
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "8m",
+      "9m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "1bac3b20-eff4-4e00-8a8d-07fe7a0f38bc",
     "hand": [
       "1m",
       "2m",
       "3m",
+      "4m",
       "5m",
-      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "9m",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "8903f3ab-f775-460b-a393-0b0d5c7b0ef8",
+    "hand": [
+      "3m",
+      "4m",
+      "4m",
       "5m",
       "7m",
       "8m",
       "9m",
       "1z",
-      "3z",
-      "3z",
-      "3z"
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Tanki"
+    "calls": []
   },
   {
-    "id": "3c9803bc-f112-4238-8ffc-46124a9db2ea",
+    "id": "ff448c8c-9d5d-4310-aa4f-1f1ac239cca8",
     "hand": [
-      "1m",
-      "2m",
-      "3m",
-      "5m",
-      "5m",
-      "5m",
-      "8m",
-      "9m",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Penchan"
-  },
-  {
-    "id": "399469b0-a97c-439c-8bbf-dbcbc93d25e7",
-    "hand": [
-      "1m",
-      "2m",
-      "5m",
-      "5m",
-      "5m",
-      "7m",
-      "8m",
-      "9m",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Penchan"
-  },
-  {
-    "id": "5fde0c4a-da3b-454f-b9ec-a84228b9f3bc",
-    "hand": [
-      "1m",
-      "2m",
-      "3m",
-      "5m",
-      "5m",
-      "5m",
-      "7m",
-      "9m",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Kanchan"
-  },
-  {
-    "id": "2eaf7720-3319-47c8-89b8-af8a8cd1d056",
-    "hand": [
-      "1m",
-      "2m",
-      "2m",
-      "3m",
-      "5m",
-      "5m",
-      "5m",
-      "7m",
-      "8m",
-      "9m",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Nakabukure Tanki"
-  },
-  {
-    "id": "7e211ac2-015a-46eb-902d-5820e1e51b6a",
-    "hand": [
-      "1z"
+      "4m"
     ],
     "calls": [
       {
-        "type": "chii",
+        "type": "pon",
         "tiles": [
           "1m",
-          "2m",
-          "3m"
+          "1m",
+          "1m"
         ]
       },
       {
         "type": "pon",
         "tiles": [
-          "5m",
-          "5m",
-          "5m"
-        ]
-      },
-      {
-        "type": "chii",
-        "tiles": [
-          "7m",
           "8m",
-          "9m"
+          "8m",
+          "8m"
         ]
       },
       {
         "type": "pon",
         "tiles": [
-          "3z",
-          "3z",
-          "3z"
+          "1z",
+          "1z",
+          "1z"
+        ]
+      },
+      {
+        "type": "pon",
+        "tiles": [
+          "6z",
+          "6z",
+          "6z"
         ]
       }
-    ],
-    "explanation": "Hadaka Tanki"
+    ]
   },
   {
-    "id": "3532d39c-6471-4b28-bbdd-8f9d7d2b8e2b",
+    "id": "7fa8d01f-7bbb-40f3-9441-dd4d59bc5ea0",
     "hand": [
       "1m",
       "2m",
       "3m",
       "5m",
       "5m",
-      "5m",
+      "6m",
       "7m",
-      "8m",
       "1z",
       "1z",
-      "3z",
-      "3z",
-      "3z"
+      "1z",
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen"
+    "calls": []
   },
   {
-    "id": "3e64bdbc-0a57-42ba-8a13-9fba3b8f5f45",
+    "id": "63bfbe55-418f-41e8-b313-99848d3927b9",
     "hand": [
       "1m",
-      "2m",
+      "1m",
+      "1m",
       "3m",
-      "5m",
-      "5m",
       "7m",
       "8m",
       "9m",
       "1z",
       "1z",
-      "3z",
-      "3z",
-      "3z"
+      "1z",
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Shanpon"
+    "calls": []
   },
   {
-    "id": "37137a76-8a28-4d9f-9c92-1d1503f033c3",
+    "id": "00eaff6f-4846-4c0a-a701-6fcae167ac96",
     "hand": [
-      "2m",
-      "3m",
       "4m",
-      "4m",
+      "5m",
+      "6m",
       "7m",
-      "8m",
-      "9m",
+      "1p",
+      "2p",
+      "3p",
       "1z",
       "1z",
       "1z",
-      "3z",
-      "3z",
-      "3z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Aryanmen (Tanki or Ryanmen)"
+    "calls": []
   },
   {
-    "id": "0fc1db18-154e-402f-bd2d-26814ef8d12e",
-    "hand": [
-      "2m",
-      "4m",
-      "4m",
-      "4m",
-      "7m",
-      "8m",
-      "9m",
-      "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Kantan (Kanchan + Tanki)"
-  },
-  {
-    "id": "78e703d0-59fc-4efc-aa47-5d4e9b4680e8",
+    "id": "5b2f09ec-709c-42c7-92cd-de222a818672",
     "hand": [
       "1m",
       "2m",
       "3m",
       "4m",
+      "5m",
+      "6m",
       "7m",
       "8m",
       "9m",
-      "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
+      "4p",
+      "4p",
+      "4p",
+      "5p"
     ],
-    "calls": [],
-    "explanation": "Nobetan"
+    "calls": []
   },
   {
-    "id": "99bf81f3-50cb-44ee-abd8-51708a07e354",
+    "id": "f4628c97-1306-46ec-a080-d137c198d61a",
     "hand": [
       "1m",
       "2m",
       "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
       "8m",
-      "8m",
+      "9m",
+      "1s",
+      "1s",
+      "1s",
+      "2s"
+    ],
+    "calls": []
+  },
+  {
+    "id": "6b997ea9-e0f2-4406-b57d-21bf0bca4113",
+    "hand": [
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "6m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "e01347d0-d7a8-4e48-98e0-f2a9ac0137e4",
+    "hand": [
+      "1m",
+      "1m",
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "6m",
+      "7m",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "2f9e2e73-7bbf-4ec4-8b11-657919242439",
+    "hand": [
+      "1m",
+      "1m",
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "5m",
+      "5m",
+      "7m",
       "8m",
       "9m",
       "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
+      "1z"
     ],
-    "calls": [],
-    "explanation": "Pentan (Penchan + Tanki) (Ankou [2 or 8] + appended terminal)"
+    "calls": []
   },
   {
-    "id": "902b50b6-2ffb-4332-bb40-0412f96a8d95",
+    "id": "f8c74777-1310-4641-9a4c-843af3332c2e",
+    "hand": [
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "7e60f538-986e-4b7d-a4da-d6e09226ce7c",
+    "hand": [
+      "1m",
+      "1m",
+      "4p",
+      "5p",
+      "6p",
+      "6p",
+      "6p",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "4d13c200-54bc-4945-b6eb-a2351155ea3a",
+    "hand": [
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "1p",
+      "2p",
+      "3p",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "265a8b31-7d81-4458-9a29-09d44159b6d0",
     "hand": [
       "2m",
       "3m",
       "4m",
       "5m",
       "6m",
+      "7m",
+      "8m",
       "1z",
       "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "4dfd82b6-c261-4224-bd68-88f39193ddb9",
+    "hand": [
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "8m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "44448a2d-94ac-4c34-b627-07c991787767",
+    "hand": [
+      "1m",
+      "1m",
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "5m",
+      "7m",
+      "8m",
+      "9m",
+      "9m",
+      "9m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "3beebf4e-e2fa-40d7-8353-c8c22171fb4d",
+    "hand": [
+      "1m",
+      "1m",
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "9m",
+      "9m",
+      "9m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "20b4a5c1-0a87-403f-946d-2bb3dd7a3375",
+    "hand": [
+      "1m",
+      "1p",
+      "9p",
+      "1s",
+      "9s",
+      "1z",
+      "2z",
       "3z",
-      "3z",
-      "3z",
-      "7z",
-      "7z",
+      "4z",
+      "5z",
+      "6z",
+      "6z",
       "7z"
     ],
-    "calls": [],
-    "explanation": "Sanmenchan (5 consecutive tiles that does not include terminal)"
+    "calls": []
   },
   {
-    "id": "8bb7f868-8934-4533-b7b9-b80444205b4e",
+    "id": "b16f0693-13df-420c-8508-2250d14844b1",
     "hand": [
-      "4m",
-      "5m",
-      "6m",
-      "6m",
-      "6m",
-      "7m",
-      "8m",
+      "1m",
       "9m",
+      "1p",
+      "9p",
+      "1s",
+      "9s",
       "1z",
-      "1z",
+      "2z",
       "3z",
-      "3z",
-      "3z"
+      "4z",
+      "5z",
+      "6z",
+      "7z"
     ],
-    "calls": [],
-    "explanation": "Entotsu (Shanpon + Ryanmen)"
+    "calls": []
   },
   {
-    "id": "d426e124-1246-43fb-82eb-8e20d95d56c8",
-    "hand": [
-      "2m",
-      "3m",
-      "3m",
-      "3m",
-      "7m",
-      "8m",
-      "9m",
-      "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Ryantan (Ryanmen + Tanki) (Ankou + appended tile)"
-  },
-  {
-    "id": "f9a25b89-2977-4dfa-a8a8-2c64073b4dd8",
-    "hand": [
-      "1m",
-      "2m",
-      "3m",
-      "4m",
-      "5m",
-      "6m",
-      "7m",
-      "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Sanmentan (three sided-tanki) (7 consecutive tiles)"
-  },
-  {
-    "id": "b6b1f334-07fd-4da6-8ce4-c718f6a8c61b",
-    "hand": [
-      "3m",
-      "3m",
-      "3m",
-      "4m",
-      "5m",
-      "6m",
-      "7m",
-      "8m",
-      "8m",
-      "8m",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Happoubijin (4 consecutive tiles between adjacent ankou)"
-  },
-  {
-    "id": "b6b1f334-07fd-4da6-8ce4-c718f6a8c61c",
-    "hand": [
-      "1m",
-      "1m",
-      "1m",
-      "2m",
-      "3m",
-      "4m",
-      "5m",
-      "6m",
-      "6m",
-      "6m",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Happoubijin (4 consecutive tiles between adjacent ankou) (With a terminal ankou)"
-  },
-  {
-    "id": "b5f26333-6706-481d-9ca8-bfa564d078a3",
-    "hand": [
-      "4m",
-      "4m",
-      "4m",
-      "5m",
-      "6m",
-      "6m",
-      "6m",
-      "1z",
-      "1z",
-      "1z",
-      "3z",
-      "3z",
-      "3z"
-    ],
-    "calls": [],
-    "explanation": "Tatsumaki (two ankou two away from each other [ex.: 4 6] connected by a tile in between)"
-  },
-  {
-    "id": "41aee9d8-c399-40bb-8b8c-2f777f4c7213",
+    "id": "717f5172-8221-493a-b8ba-ee5c16f142a1",
     "hand": [
       "3m",
       "5m",
@@ -417,11 +455,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Kanchan with tanki"
+    "calls": []
   },
   {
-    "id": "743b8801-8124-449b-aafc-adbf3fbf913f",
+    "id": "5b7cd26f-b919-407c-b3e1-fdb61340d776",
     "hand": [
       "1m",
       "1m",
@@ -437,11 +474,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Kanchan with nobetan"
+    "calls": []
   },
   {
-    "id": "0ebb86f2-6cdc-4524-b690-8264604c3a3c",
+    "id": "5255e50f-0c7e-4b4d-a1ba-38c3f4e838c8",
     "hand": [
       "4m",
       "4m",
@@ -457,11 +493,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Shanpon with tanki"
+    "calls": []
   },
   {
-    "id": "3f3a9ed9-5f8f-49f4-913e-6edc0248c596",
+    "id": "7339e439-181a-4d3a-bf7e-f10dcc075f2d",
     "hand": [
       "2m",
       "2m",
@@ -473,15 +508,14 @@
       "5m",
       "1z",
       "1z",
-      "5z",
-      "5z",
-      "5z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Nested shanpon"
+    "calls": []
   },
   {
-    "id": "d17cef76-e92b-4b18-8d0f-d688e310f165",
+    "id": "50cb67f3-38d2-44e9-870f-f67a823163d9",
     "hand": [
       "1m",
       "1m",
@@ -493,15 +527,14 @@
       "1z",
       "1z",
       "1z",
-      "5z",
-      "5z",
-      "5z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with penchan"
+    "calls": []
   },
   {
-    "id": "613d150a-1d17-4d81-83cc-f6fbe06d7bc2",
+    "id": "ca9f5ec4-6d67-4a45-a0b2-471475803443",
     "hand": [
       "5m",
       "5m",
@@ -513,15 +546,14 @@
       "1z",
       "1z",
       "1z",
-      "5z",
-      "5z",
-      "5z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Aryanmen with kanchan"
+    "calls": []
   },
   {
-    "id": "1420050c-8f5d-46e6-a028-71c87677dfa6",
+    "id": "c6b0807d-82e1-4256-b5d3-aaa78767536d",
     "hand": [
       "3m",
       "4m",
@@ -533,15 +565,14 @@
       "1z",
       "1z",
       "1z",
-      "5z",
-      "5z",
-      "5z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Aryanmen with kanchan"
+    "calls": []
   },
   {
-    "id": "e6d04553-6ccf-4ab6-9f8a-9f9b5b291ed6",
+    "id": "6ef8626d-aaee-4b5c-b24e-31d5343917b5",
     "hand": [
       "4m",
       "5m",
@@ -553,15 +584,14 @@
       "1z",
       "1z",
       "1z",
-      "5z",
-      "5z",
-      "5z"
+      "6z",
+      "6z",
+      "6z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with nakabukure"
+    "calls": []
   },
   {
-    "id": "02def465-1010-49b2-9cdc-96978bef356d",
+    "id": "362a9089-d567-4f5d-a84a-8a33e9a5362d",
     "hand": [
       "2m",
       "2m",
@@ -573,15 +603,14 @@
       "5m",
       "6m",
       "6m",
-      "5z",
-      "5z",
-      "5z"
+      "1z",
+      "1z",
+      "1z"
     ],
-    "calls": [],
-    "explanation": "Quadruple shanpon"
+    "calls": []
   },
   {
-    "id": "d9c4ffcc-8f62-47a6-840f-fccf19ee45f7",
+    "id": "8d65d209-1f7b-4df0-baaa-86f006971f88",
     "hand": [
       "3m",
       "4m",
@@ -597,11 +626,10 @@
       "1z",
       "1z"
     ],
-    "calls": [],
-    "explanation": "Double entotsu"
+    "calls": []
   },
   {
-    "id": "392bb11e-1655-43e8-8162-b0ee9882d710",
+    "id": "45aac7f3-bc4d-4931-a1b4-c4283432cb2c",
     "hand": [
       "2m",
       "2m",
@@ -617,31 +645,29 @@
       "1z",
       "1z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with shanpon"
+    "calls": []
   },
   {
-    "id": "d03b5b7e-36ab-45c4-9aae-4dd1ac3993ac",
+    "id": "5f96226d-3ac7-4122-a475-2a87c02e9a4a",
     "hand": [
+      "2m",
+      "2m",
       "3m",
+      "3m",
+      "4m",
       "4m",
       "5m",
       "5m",
-      "5m",
-      "2s",
-      "2s",
-      "3s",
       "3s",
       "4s",
-      "4s",
+      "5s",
       "5s",
       "5s"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with nested shanpon"
+    "calls": []
   },
   {
-    "id": "77163402-1253-46c9-969b-fe4c92755a95",
+    "id": "e4a4eab2-b9c3-474f-b158-b4f6e770779d",
     "hand": [
       "4m",
       "4m",
@@ -657,11 +683,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with tanki and shanpon (1)"
+    "calls": []
   },
   {
-    "id": "02405e7a-760b-4cfa-a514-197e3be5c9c0",
+    "id": "89b4874a-b266-4049-b377-e78b8f35b238",
     "hand": [
       "2m",
       "2m",
@@ -677,11 +702,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Ryanmen with tanki and shanpon (2)"
+    "calls": []
   },
   {
-    "id": "e82d390b-c88f-451d-a5c9-87c91a463837",
+    "id": "f654e9ee-d8a2-45ce-8d9b-e89f8cfd3985",
     "hand": [
       "3m",
       "3m",
@@ -697,11 +721,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Sanmenchan with shanpon"
+    "calls": []
   },
   {
-    "id": "a4030888-f11e-43b5-a8f1-9db9ad7796ba",
+    "id": "fade7cc7-f8f6-4066-a3f3-4850fe4d4e28",
     "hand": [
       "4m",
       "5m",
@@ -717,11 +740,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Sanmenchan with tanki"
+    "calls": []
   },
   {
-    "id": "46e2312a-6623-45b9-967a-12cf5595017f",
+    "id": "11c3a080-87e9-4d89-93a1-734b7bfa1b53",
     "hand": [
       "2m",
       "2m",
@@ -737,11 +759,10 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Double ryanmen (1)"
+    "calls": []
   },
   {
-    "id": "a73b2b3d-92b8-43fe-b15e-a6bab1c214cf",
+    "id": "91bf20b9-ac60-4c6a-9496-84e1bc5fb3bf",
     "hand": [
       "4m",
       "5m",
@@ -757,7 +778,291 @@
       "6z",
       "6z"
     ],
-    "calls": [],
-    "explanation": "Double ryanmen (2)"
+    "calls": []
+  },
+  {
+    "id": "9e9defda-b009-4335-94c2-e664a0fea56a",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "7m",
+      "7m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "8461d2fe-a9a5-4b01-8b1d-944c4bb6d576",
+    "hand": [
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "1z",
+      "1z",
+      "1z",
+      "6z",
+      "6z",
+      "6z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "f3f1b535-57f8-423b-84d9-f71f661a59b8",
+    "hand": [
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "7m",
+      "8m",
+      "8m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "2e8f4d82-b065-4407-a833-9969acd7306c",
+    "hand": [
+      "1m",
+      "1m",
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "f78a5b05-9988-441a-bb3e-41fe3b31e272",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "6m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "de63a51f-f9bc-41fe-8c17-c7b0c199421d",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "8m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "5c147c67-7972-4722-8b59-26019e01c07a",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "4760d0b1-d098-4156-9dcb-0730c3afaba3",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "6m",
+      "7m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "1aa9b4a5-c5f2-4a2e-bd48-031ae226de79",
+    "hand": [
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "6m",
+      "6m",
+      "7m",
+      "8m",
+      "1z",
+      "1z",
+      "1z"
+    ],
+    "calls": []
+  },
+  {
+    "id": "69bc1c82-12b1-4e94-92f9-ac1edc3c1c21",
+    "hand": [
+      "2m",
+      "3m",
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "7m",
+      "7m",
+      "7m",
+      "8m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "bb59fda0-cb9e-4d54-bef7-89f8111cd372",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "6m",
+      "6m",
+      "6m",
+      "7m",
+      "8m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "b0380bba-86b8-404b-a5ac-1ab01838b752",
+    "hand": [
+      "2m",
+      "2m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "7m",
+      "7m",
+      "7m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "b031af6e-4001-4016-b540-f30a6e6de1a0",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "5m",
+      "5m",
+      "6m",
+      "6m",
+      "6m",
+      "7m",
+      "8m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "5b513db6-836f-4490-bc56-666853661768",
+    "hand": [
+      "2m",
+      "3m",
+      "3m",
+      "3m",
+      "3m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "8m",
+      "8m"
+    ],
+    "calls": []
+  },
+  {
+    "id": "3d04fb14-de99-4292-b220-57a1198bf071",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "4m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "9m",
+      "9m",
+      "9m"
+    ],
+    "calls": []
   }
 ]

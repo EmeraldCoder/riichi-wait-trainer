@@ -1,182 +1,194 @@
-function K(e, s) {
-  const n = e[1], r = s[1];
-  if (n < r)
+function k(e, r) {
+  const t = e[1], s = r[1];
+  if (t < s)
     return -1;
-  if (n > r)
+  if (t > s)
     return 1;
-  const t = parseInt(e[0]), u = parseInt(s[0]);
-  return t < u ? -1 : t > u ? 1 : 0;
+  const n = parseInt(e[0]), u = parseInt(r[0]);
+  return n < u ? -1 : n > u ? 1 : 0;
 }
-const k = ["m", "p", "s", "z"], b = k.reduce((e, s) => {
-  const n = s === "z" ? 7 : 9;
-  for (let r = 1; r <= n; r++)
-    e.push(`${r}${s}`);
+const P = ["m", "p", "s", "z"], K = P.reduce((e, r) => {
+  const t = r === "z" ? 7 : 9;
+  for (let s = 1; s <= t; s++)
+    e.push(`${s}${r}`);
   return e;
 }, []);
-function P(e) {
-  return e.reduce((s, n) => {
-    const r = s.findIndex((t) => t.key === n);
-    return r === -1 ? s.push({ key: n, value: [n] }) : s[r].value.push(n), s;
+function b(e) {
+  return e.reduce((r, t) => {
+    const s = r.findIndex((n) => n.key === t);
+    return s === -1 ? r.push({ key: t, value: [t] }) : r[s].value.push(t), r;
   }, []);
 }
-function A(e) {
-  let s = [];
-  return e.split("").reduce((n, r) => (k.includes(r) ? (n.push(...s.map((t) => `${t}${r}`)), s = []) : s.push(r), n), []);
+function I(e) {
+  let r = [];
+  return e.split("").reduce((t, s) => (P.includes(s) ? (t.push(...r.map((n) => `${n}${s}`)), r = []) : r.push(s), t), []);
 }
-function O(e) {
+function F(e) {
   if (typeof e == "string")
-    return O({ hand: A(e), calls: [] });
+    return F({ hand: I(e), calls: [] });
   if (Array.isArray(e))
-    return O({ hand: e, calls: [] });
-  const s = e.calls.map((n) => ({ tiles: n.tiles.slice() }));
-  return P(e.hand).map((n) => n.key).reduce((n, r) => {
-    const t = e.hand.slice();
-    t.unshift(t.splice(t.findIndex((h) => h === r), 1)[0]);
-    const u = t.slice(), o = [
-      ...s,
-      ...T(u, !0),
+    return F({ hand: e, calls: [] });
+  const r = e.calls.map((t) => ({ tiles: t.tiles.slice() }));
+  return b(e.hand).map((t) => t.key).reduce((t, s) => {
+    const n = e.hand.slice();
+    n.unshift(n.splice(n.findIndex((h) => h === s), 1)[0]);
+    const u = n.slice(), o = [
+      ...r,
+      ...m(u, !0),
       ...z(u, !0)
     ].sort(p);
-    o.length !== 0 && !n.some((h) => x(h, o)) && n.push(o);
-    const c = t.slice(), f = [
-      ...s,
-      ...$(c, c[0]),
+    o.length !== 0 && !t.some((h) => x(h, o)) && t.push(o);
+    const i = n.slice(), f = [
+      ...r,
+      ...S(i, i[0]),
       // give priority to toitsu
-      ...T(c, !0),
-      ...z(c, !0)
+      ...m(i, !0),
+      ...z(i, !0)
     ].sort(p);
-    f.length !== 0 && !n.some((h) => x(h, f)) && n.push(f);
-    const l = t.slice(), i = [
-      ...s,
-      ...T(l, !1),
+    f.length !== 0 && !t.some((h) => x(h, f)) && t.push(f);
+    const l = n.slice(), c = [
+      ...r,
+      ...m(l, !1),
       ...z(l, !1)
     ].sort(p);
-    i.length !== 0 && !n.some((h) => x(h, i)) && n.push(i);
-    const m = t.slice(), y = [
-      ...s,
-      ...$(m, m[0]),
+    c.length !== 0 && !t.some((h) => x(h, c)) && t.push(c);
+    const T = n.slice(), y = [
+      ...r,
+      ...S(T, T[0]),
       // give priority to toitsu
-      ...T(m, !1),
-      ...z(m, !1)
+      ...m(T, !1),
+      ...z(T, !1)
     ].sort(p);
-    return y.length !== 0 && !n.some((h) => x(h, y)) && n.push(y), n;
+    return y.length !== 0 && !t.some((h) => x(h, y)) && t.push(y), t;
   }, []);
 }
-function T(e, s) {
-  const n = [];
-  let r = 0;
-  for (; r < e.length; ) {
-    const t = e[r][1], u = parseInt(e[r][0]);
+function m(e, r) {
+  const t = [];
+  let s = 0;
+  for (; s < e.length; ) {
+    const n = e[s][1], u = parseInt(e[s][0]);
     let o;
-    s ? o = [
-      ...t !== "z" && u >= 3 ? a(e, t, u - 2) : [],
-      ...t !== "z" && u >= 2 ? a(e, t, u - 1) : [],
-      ...t !== "z" ? a(e, t, u) : [],
-      ...F(e, e[r])
+    r ? o = [
+      ...n !== "z" && u >= 3 ? a(e, n, u - 2) : [],
+      ...n !== "z" && u >= 2 ? a(e, n, u - 1) : [],
+      ...n !== "z" ? a(e, n, u) : [],
+      ...M(e, e[s])
     ] : o = [
-      ...F(e, e[r]),
-      ...t !== "z" && u >= 3 ? a(e, t, u - 2) : [],
-      ...t !== "z" && u >= 2 ? a(e, t, u - 1) : [],
-      ...t !== "z" ? a(e, t, u) : []
-    ], o.length === 0 ? r++ : n.push(...o);
+      ...M(e, e[s]),
+      ...n !== "z" && u >= 3 ? a(e, n, u - 2) : [],
+      ...n !== "z" && u >= 2 ? a(e, n, u - 1) : [],
+      ...n !== "z" ? a(e, n, u) : []
+    ], o.length === 0 ? s++ : t.push(...o);
   }
-  return n;
+  return t;
 }
-function a(e, s, n) {
-  const r = e.find((o) => o === `${n}${s}`), t = e.find((o) => o === `${n + 1}${s}`), u = e.find((o) => o === `${n + 2}${s}`);
-  return r && t && u ? (e.splice(e.indexOf(r), 1), e.splice(e.indexOf(t), 1), e.splice(e.indexOf(u), 1), [{ tiles: [r, t, u] }, ...a(e, s, n)]) : [];
+function a(e, r, t) {
+  const s = e.find((o) => o === `${t}${r}`), n = e.find((o) => o === `${t + 1}${r}`), u = e.find((o) => o === `${t + 2}${r}`);
+  return s && n && u ? (e.splice(e.indexOf(s), 1), e.splice(e.indexOf(n), 1), e.splice(e.indexOf(u), 1), [{ tiles: [s, n, u] }, ...a(e, r, t)]) : [];
 }
-function F(e, s) {
-  const n = e.filter((r) => r === s).slice(0, 3);
-  return n.length === 3 ? (n.forEach((r) => e.splice(e.indexOf(r), 1)), [{ tiles: n }]) : [];
+function M(e, r) {
+  const t = e.filter((s) => s === r).slice(0, 3);
+  return t.length === 3 ? (t.forEach((s) => e.splice(e.indexOf(s), 1)), [{ tiles: t }]) : [];
 }
-function z(e, s) {
-  const n = [];
-  let r = 0;
-  for (; r < e.length; ) {
-    const t = e[r][1], u = parseInt(e[r][0]);
+function z(e, r) {
+  const t = [];
+  let s = 0;
+  for (; s < e.length; ) {
+    const n = e[s][1], u = parseInt(e[s][0]);
     let o;
-    s ? o = [
-      ...t !== "z" && u >= 3 ? d(e, t, u - 2) : [],
-      ...t !== "z" && u >= 2 ? d(e, t, u - 1) : [],
-      ...t !== "z" ? d(e, t, u) : [],
-      ...$(e, e[r])
+    r ? o = [
+      ...n !== "z" && u >= 3 ? d(e, n, u - 2) : [],
+      ...n !== "z" && u >= 2 ? d(e, n, u - 1) : [],
+      ...n !== "z" ? d(e, n, u) : [],
+      ...S(e, e[s])
     ] : o = [
-      ...$(e, e[r]),
-      ...t !== "z" && u >= 3 ? d(e, t, u - 2) : [],
-      ...t !== "z" && u >= 2 ? d(e, t, u - 1) : [],
-      ...t !== "z" ? d(e, t, u) : []
-    ], o.length === 0 ? r++ : n.push(...o);
+      ...S(e, e[s]),
+      ...n !== "z" && u >= 3 ? d(e, n, u - 2) : [],
+      ...n !== "z" && u >= 2 ? d(e, n, u - 1) : [],
+      ...n !== "z" ? d(e, n, u) : []
+    ], o.length === 0 ? s++ : t.push(...o);
   }
-  return n;
+  return t;
 }
-function d(e, s, n) {
-  if (n > 7)
+function d(e, r, t) {
+  if (t > 7)
     return [];
-  const r = n, t = n + 1, u = n + 2, o = e.find((i) => i === `${r}${s}`), c = e.find((i) => i === `${t}${s}`), f = e.find((i) => i === `${u}${s}`), l = [];
-  return o != null && c != null && f == null && l.push(o, c), o != null && c == null && f != null && l.push(o, f), o == null && c != null && f != null && l.push(c, f), l.length === 2 ? (l.forEach((i) => e.splice(e.indexOf(i), 1)), [{ tiles: l }, ...d(e, s, n)]) : [];
+  const s = t, n = t + 1, u = t + 2, o = e.find((c) => c === `${s}${r}`), i = e.find((c) => c === `${n}${r}`), f = e.find((c) => c === `${u}${r}`), l = [];
+  return o != null && i != null && f == null && l.push(o, i), o != null && i == null && f != null && l.push(o, f), o == null && i != null && f != null && l.push(i, f), l.length === 2 ? (l.forEach((c) => e.splice(e.indexOf(c), 1)), [{ tiles: l }, ...d(e, r, t)]) : [];
 }
-function $(e, s) {
-  const n = e.filter((r) => r === s).slice(0, 2);
-  return n.length === 2 ? (n.forEach((r) => e.splice(e.indexOf(r), 1)), [{ tiles: n }]) : [];
+function S(e, r) {
+  const t = e.filter((s) => s === r).slice(0, 2);
+  return t.length === 2 ? (t.forEach((s) => e.splice(e.indexOf(s), 1)), [{ tiles: t }]) : [];
 }
-function p(e, s) {
-  const n = K(e.tiles[0], s.tiles[0]);
-  if (n !== 0)
-    return n;
-  const r = e.tiles[0] !== e.tiles[1], t = s.tiles[0] !== s.tiles[1];
-  return r && !t ? 1 : !r && t || e.tiles.length > s.tiles.length ? -1 : e.tiles.length < s.tiles.length ? 1 : 0;
+function p(e, r) {
+  const t = k(e.tiles[0], r.tiles[0]);
+  if (t !== 0)
+    return t;
+  const s = e.tiles[0] !== e.tiles[1], n = r.tiles[0] !== r.tiles[1];
+  return s && !n ? 1 : !s && n || e.tiles.length > r.tiles.length ? -1 : e.tiles.length < r.tiles.length ? 1 : 0;
 }
-function x(e, s) {
-  if (e.length !== s.length)
+function x(e, r) {
+  if (e.length !== r.length)
     return !1;
-  for (let n = 0; n < e.length; n++)
-    if (p(e[n], s[n]) !== 0)
+  for (let t = 0; t < e.length; t++)
+    if (p(e[t], r[t]) !== 0)
       return !1;
   return !0;
 }
-function S(e) {
-  return typeof e == "string" ? S({ hand: A(e), calls: [] }) : Array.isArray(e) ? S({ hand: e, calls: [] }) : e.calls.length > 0 ? I(e) : Math.min(
-    I(e),
+function $(e) {
+  return typeof e == "string" ? $({ hand: I(e), calls: [] }) : Array.isArray(e) ? $({ hand: e, calls: [] }) : e.calls.length > 0 ? O(e) : Math.min(
+    O(e),
     B(e),
     C(e)
   );
 }
-function I(e) {
-  return O(e).reduce((n, r) => {
-    let t = !1, u = 0, o = 0;
-    r.forEach((i) => {
-      i.tiles.length >= 3 ? u++ : !t && i.tiles[0] === i.tiles[1] ? t = !0 : o++;
+function O(e) {
+  return F(e).reduce((t, s) => {
+    let n = !1, u = 0, o = 0;
+    s.forEach((c) => {
+      c.tiles.length >= 3 ? u++ : !n && c.tiles[0] === c.tiles[1] ? n = !0 : o++;
     });
-    const c = Math.min(4, u), f = Math.min(4 - u, o), l = 8 - c * 2 - f - (t ? 1 : 0);
-    return l < n ? l : n;
+    const i = Math.min(4, u), f = Math.min(4 - u, o), l = 8 - i * 2 - f - (n ? 1 : 0);
+    return l < t ? l : t;
   }, 8);
 }
 function B(e) {
-  return 6 - P(e.hand).filter((n) => n.value.length >= 2).length;
+  return 6 - b(e.hand).filter((t) => t.value.length >= 2).length;
 }
 function C(e) {
-  let s = !1;
-  return 13 - e.hand.reduce((r, t) => {
-    const u = parseInt(t[0]);
-    return (t[1] === "z" || u === 1 || u === 9) && (r.includes(t) ? s || (r.push(t), s = !0) : r.push(t)), r;
+  let r = !1;
+  return 13 - e.hand.reduce((s, n) => {
+    const u = parseInt(n[0]);
+    return (n[1] === "z" || u === 1 || u === 9) && (s.includes(n) ? r || (s.push(n), r = !0) : s.push(n)), s;
   }, []).length;
 }
-function M(e) {
+function A(e) {
   if (typeof e == "string")
-    return M({ hand: A(e), calls: [] });
+    return A({ hand: I(e), calls: [] });
   if (Array.isArray(e))
-    return M({ hand: e, calls: [] });
-  const s = S(e);
-  return b.reduce((n, r) => (S({ ...e, hand: [...e.hand, r] }) < s && n.push(r), n), []);
+    return A({ hand: e, calls: [] });
+  const r = $(e), t = [...e.hand, ...e.calls.reduce((n, u) => (n.push(...u.tiles), n), [])];
+  return K.slice().reduce((n, u) => (t.filter((i) => i === u).length < 4 && n.push(u), n), []).reduce((n, u) => ($({ ...e, hand: [...e.hand, u] }) < r && n.push(u), n), []);
+}
+function j(e) {
+  if (e.length === 0)
+    return "";
+  const r = e.slice().sort(k);
+  let t = "", s = r[0][1], n = [r[0][0]];
+  for (let u = 1; u < r.length; u++) {
+    const o = r[u][0], i = r[u][1];
+    i === s ? n.push(o) : (t += n.join("") + s, s = i, n = [o]);
+  }
+  return t += n.join("") + s, t;
 }
 export {
-  K as compareTiles,
-  b as distinctTiles,
-  O as getBlocks,
-  S as getShanten,
-  M as getUkeire,
-  P as groupIdenticalTiles,
-  A as mapTilesFromMPSZFormat,
-  k as suitCharacters
+  k as compareTiles,
+  K as distinctTiles,
+  F as getBlocks,
+  $ as getShanten,
+  A as getUkeire,
+  b as groupIdenticalTiles,
+  I as mapTilesFromMPSZFormat,
+  j as mapTilesToMPSZFormat,
+  P as suitCharacters
 };
