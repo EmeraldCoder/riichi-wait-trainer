@@ -8,6 +8,10 @@ const props = defineProps({
   },
   suits: {
     required: true
+  },
+  readOnly: {
+    required: false,
+    default: false
   }
 })
 
@@ -16,6 +20,8 @@ const emit = defineEmits(['update:modelValue'])
 const { isMobile, isMedium } = useWidthTreshold()
 
 function toggleTileSelection (tile) {
+  if (props.readOnly) return
+
   if (props.modelValue.includes(tile)) {
     emit('update:modelValue', props.modelValue.filter(x => x !== tile))
   } else {

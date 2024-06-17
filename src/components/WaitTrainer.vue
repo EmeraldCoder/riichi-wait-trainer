@@ -11,12 +11,11 @@
     </h2>
 
     <form
-      v-show="status === 'user'"
       @submit="submitAnswer"
     >
-      <answer-input v-model="userAnswer" :suits="question.hand.reduce((agg, x) => { const suit = x[1]; if (!agg.includes(suit)) { agg.push(suit); } return agg }, []).sort()"/>
+      <answer-input v-model="userAnswer" :read-only="status !== 'user'" :suits="question.hand.reduce((agg, x) => { const suit = x[1]; if (!agg.includes(suit)) { agg.push(suit); } return agg }, []).sort()"/>
 
-      <div class="bottom-buttons">
+      <div class="bottom-buttons" v-show="status === 'user'">
         <button class="large">Submit</button>
       </div>
     </form>
@@ -43,20 +42,19 @@
           :icon="faTimesCircle"
           style="font-size: 50px; color: #B33A3A;"
         />
-      </div>
 
-      <div class="m-t">
-        <div class="row">
-          <tile-group>
-            <tile v-for="tile in answer" :key="tile" :tile="tile" :small="isMobile || isMedium"/>
-          </tile-group>
+        <div class="m-t">
+          <div class="row">
+            <tile-group>
+              <tile v-for="tile in answer" :key="tile" :tile="tile" :small="isMobile || isMedium"/>
+            </tile-group>
+          </div>
         </div>
       </div>
 
       <div class="bottom-buttons">
         <button class="large" @click="nextQuestion">
-          <span class="long-desc">Next Question</span>
-          <span class="short-desc">Next</span>
+          Next Question
         </button>
       </div>
     </div>
@@ -140,10 +138,6 @@ function ukeireAreIdentical (a, b) {
   border-radius: 0;
 }
 
-.bottom-buttons button .short-desc {
-  display: none;
-}
-
 @media (max-width: 1920px) {
   .bottom-buttons {
     gap: unset;
@@ -156,16 +150,6 @@ function ukeireAreIdentical (a, b) {
 
   .container--main {
     padding-bottom: 70px;
-  }
-}
-
-@media (max-width: 767px) {
-  .bottom-buttons button .short-desc {
-    display: block;
-  }
-
-  .bottom-buttons button .long-desc {
-    display: none;
   }
 }
 </style>
