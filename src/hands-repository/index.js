@@ -2,10 +2,6 @@ import groups from './hands.json'
 
 let randomGroupHands = null
 
-// export function getHandById (id) {
-//   return hands.filter(x => x.id === id)[0]
-// }
-
 export function getRandomHandNotUsed () {
   if (randomGroupHands == null) {
     randomGroupHands = groups.slice()
@@ -16,10 +12,6 @@ export function getRandomHandNotUsed () {
 
   return hand
 }
-
-// function getRandomInt (max) {
-//   return Math.floor(Math.random() * max)
-// }
 
 function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i--) {

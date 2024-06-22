@@ -1,6 +1,6 @@
 {
   "name": "riichi-wait-trainer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -8,9 +8,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --port 5050",
-    "test:unit": "vitest run",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
-    "watch:test:unit": "vitest"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore"
   },
   "dependencies": {
     "@emeraldcoder/riichi-ui-vue": "0.0.0-beta.5",
@@ -30,7 +28,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "vite": "^5.0.0",
-    "vitest": "^1.0.0",
     "vite-plugin-html": "^3.0.0"
   }
 }

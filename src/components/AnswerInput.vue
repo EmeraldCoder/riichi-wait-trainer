@@ -49,7 +49,7 @@ function toggleTileSelection (tile) {
 
 <style scoped>
 .tile--selected {
-  border-color: orange;
+  border-color: var(--orange);
   position: relative;
 }
 .tile--selected::after {
@@ -59,7 +59,10 @@ function toggleTileSelection (tile) {
   height: 100%;
   top: 0;
   left: 0;
-  background: gold;
+  background: var(--orange);
   opacity: 0.3;
+}
+.tile--selected:hover::after {
+  background: var(--orange-hover);
 }
 </style>

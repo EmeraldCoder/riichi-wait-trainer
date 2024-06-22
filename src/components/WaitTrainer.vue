@@ -16,7 +16,7 @@
       <answer-input v-model="userAnswer" :read-only="status !== 'user'" :suits="question.hand.reduce((agg, x) => { const suit = x[1]; if (!agg.includes(suit)) { agg.push(suit); } return agg }, []).sort()"/>
 
       <div class="bottom-buttons" v-show="status === 'user'">
-        <button class="large">Submit</button>
+        <button class="large" :disabled="userAnswer.length === 0">Submit</button>
       </div>
     </form>
 
@@ -138,7 +138,7 @@ function ukeireAreIdentical (a, b) {
   border-radius: 0;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .bottom-buttons {
     gap: unset;
     max-width: unset;
