@@ -1,0 +1,10 @@
+Package               Current Wanted Latest  Package Type    URL
+eslint                8.57.1  8.57.1 9.11.1  devDependencies https://eslint.org
+eslint-plugin-n       16.6.2  16.6.2 17.10.3 devDependencies https://github.com/eslint-community/eslint-plugin-n#readme
+eslint-plugin-promise 6.6.0   6.6.0  7.1.0   devDependencies https://github.com/eslint-community/eslint-plugin-promise
+
+Can't update eslint to v9 for now because eslint-config-standard have a peer dependency on v8.
+Can't update eslint-plugin-n to v17 for now because eslint-config-standard have a peer dependency on v15 or v16.
+Can't update eslint-plugin-promise to v7 for now because eslint-config-standard have a peer dependency on v6.
+
+----------------------
